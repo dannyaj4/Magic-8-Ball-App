@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kxz-gg-GGa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.13701110354015761" green="0.45236336068581778" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlU-vN-cd3" userLabel="centerView">
+                                <rect key="frame" x="9" y="222" width="396" height="452"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me Anything...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-go-oZZ">
+                                        <rect key="frame" x="20" y="36" width="356" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="40"/>
+                                        <color key="textColor" red="0.26511533462976949" green="0.81870995155406301" blue="0.88514334629029789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYz-D8-aaO" userLabel="Magic Ball">
+                                        <rect key="frame" x="35" y="135" width="341" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7X-fl-Ng0">
+                                        <rect key="frame" x="140" y="357" width="116" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.067413985729217529" green="0.82981997728347778" blue="0.89805465936660767" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
+                                        <state key="normal" title="Ask Me">
+                                            <color key="titleColor" red="0.13062381744384766" green="0.39935654401779175" blue="0.42745774984359741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpm-ow-PTM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="396" id="3Vt-1J-y82"/>
+                                    <constraint firstAttribute="height" constant="452" id="pmE-Qx-3tb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TlU-vN-cd3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0ji-DX-N0P"/>
+                            <constraint firstItem="Kxz-gg-GGa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="7RI-tg-Il3"/>
+                            <constraint firstItem="Kxz-gg-GGa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DmE-UX-nCR"/>
+                            <constraint firstItem="TlU-vN-cd3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P2G-ib-3Bo"/>
+                            <constraint firstAttribute="bottom" secondItem="Kxz-gg-GGa" secondAttribute="bottom" id="XpN-LQ-ne5"/>
+                            <constraint firstItem="Kxz-gg-GGa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rSJ-6M-863"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uYz-D8-aaO" id="b76-Yt-44l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+</document>
